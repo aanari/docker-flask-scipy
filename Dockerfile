@@ -1,6 +1,6 @@
-FROM python:slim
+FROM python:2.7-slim
 
-MAINTAINER wrwrwr <docker@wr.waw.pl>
+MAINTAINER aanari <ali@anari.io>
 
 # Install runit, and up-to-date Flask and SciPy from PyPI.
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes \

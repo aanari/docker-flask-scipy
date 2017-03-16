@@ -2,7 +2,7 @@ docker-flask-scipy
 ==================
 
 A small image with fully working [SciPy][] and an infrastructure sufficient for
-a simple web service.
+a simple web service. (Python 2.7)
 
 Includes:
 * [runit][]
@@ -26,7 +26,7 @@ Add application code and a `runit` script starting `Gunicorn`.
 A basic derived `Dockerfile` could look as follows:
 
 ```Dockerfile
-FROM wrwrwr/flask-scipy
+FROM aanari/flask-scipy
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
